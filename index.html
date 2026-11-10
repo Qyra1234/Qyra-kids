@@ -1,55 +1,9 @@
-<!doctype html>
-<html lang="it">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#171326">
-<title>QYRA KIDS — Impara, gioca, cresci</title>
-<style>
-:root{--ink:#211c35;--muted:#777287;--cream:#fbf8f2;--paper:#fff;--purple:#6d4bd1;--violet:#8a6bea;--gold:#e9bd65;--mint:#dff5eb;--line:#eee9e2;--shadow:0 14px 40px #2b1b4912}
-*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}button,input,select{font:inherit}button{cursor:pointer;border:0} .shell{max-width:1120px;margin:auto;padding:22px}.top{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:8px 0 22px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.08em}.logo{width:43px;height:43px;border-radius:15px;background:linear-gradient(145deg,#2a2043,#6d4bd1);color:#f8d88e;display:grid;place-items:center;font-weight:900;font-size:19px;box-shadow:0 8px 20px #6d4bd133}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:.18em;font-weight:700}.top-actions{display:flex;gap:8px}.pill,.btn{border-radius:999px;padding:10px 16px;font-weight:750}.pill{background:#fff;border:1px solid var(--line);color:var(--ink)}.btn{background:var(--purple);color:white;box-shadow:0 7px 18px #6d4bd12b}.btn.secondary{background:#f0ebff;color:#5d43b4;box-shadow:none}.btn.light{background:white;color:var(--ink);border:1px solid var(--line);box-shadow:none}.hero{background:linear-gradient(120deg,#211a36,#40306c 62%,#6e55b5);border-radius:28px;padding:32px;color:white;display:grid;grid-template-columns:1.4fr .8fr;gap:20px;overflow:hidden;position:relative;box-shadow:var(--shadow)}.eyebrow{color:#f2d18b;text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:850}.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.08;margin:12px 0}.hero p{color:#e5def6;max-width:560px}.hero-art{display:grid;place-items:center;font-size:100px;filter:drop-shadow(0 14px 15px #100b2480)}.hero .btn{background:var(--gold);color:#302443;margin-top:8px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:30px 0 14px}.section-head h2{margin:0;font-size:23px}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:19px;box-shadow:var(--shadow)}.feature{min-height:170px}.emoji{font-size:31px}.card h3{margin:9px 0 5px}.card p{margin:0;color:var(--muted);font-size:14px}.tag{display:inline-block;background:#f2edff;color:#6146bd;padding:5px 10px;border-radius:999px;font-size:11px;font-weight:800;margin-top:13px}.row{display:flex;align-items:center;justify-content:space-between;gap:12px}.profile{display:flex;align-items:center;gap:12px}.avatar{width:48px;height:48px;border-radius:16px;background:#fff0d5;display:grid;place-items:center;font-size:25px}.progress{height:9px;background:#f0edf4;border-radius:99px;overflow:hidden;margin:12px 0 5px}.progress span{display:block;height:100%;background:linear-gradient(90deg,#8c72e7,#e9bd65);border-radius:99px}.panel{display:none}.panel.active{display:block}.hidden{display:none!important}.formrow{display:grid;gap:6px;margin:12px 0}.formrow label{font-weight:750;font-size:13px}.formrow input,.formrow select{padding:12px 14px;border:1px solid var(--line);border-radius:13px;background:#fff;width:100%;color:var(--ink)}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.notice{background:#fff7df;border:1px solid #f2dfac;color:#725a22;border-radius:15px;padding:12px 14px;font-size:13px;margin:15px 0}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.tab{background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 14px;font-weight:750;color:var(--muted)}.tab.active{background:#eee8ff;color:#5c42b6;border-color:#ddd2ff}.lesson{max-width:680px;margin:18px auto;text-align:center;padding:28px}.word{font-size:clamp(40px,9vw,64px);font-weight:900;margin:20px 0 6px}.answer-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.answer{padding:15px;border:1px solid var(--line);border-radius:15px;background:white;font-weight:800}.answer:active{transform:scale(.98)}.feedback{font-weight:800;min-height:28px;margin:14px}.footer{color:var(--muted);font-size:12px;text-align:center;padding:35px 0 18px}.modal{position:fixed;inset:0;background:#17132699;display:none;place-items:center;padding:18px;z-index:5}.modal.open{display:grid}.modalbox{background:var(--cream);border-radius:24px;padding:24px;max-width:520px;width:100%;max-height:90vh;overflow:auto}.close{background:#eee8ff;border-radius:50%;width:36px;height:36px;font-size:20px}.small{font-size:12px;color:var(--muted)}@media(max-width:720px){.shell{padding:14px}.hero{grid-template-columns:1fr;padding:24px}.hero-art{display:none}.grid{grid-template-columns:1fr}.top{align-items:flex-start}.top-actions{flex-wrap:wrap;justify-content:flex-end}.formgrid{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}}
-</style>
-</head>
-<body>
-<div class="shell">
-<header class="top">
- <div class="brand"><div class="logo">Q</div><div>QYRA KIDS<small>IMPARA · GIOCA · CRESCI</small></div></div>
- <div class="top-actions"><button class="pill" id="homeBtn">Home</button><button class="pill" id="parentBtn">Area genitori</button></div>
-</header>
+QYRA KIDS — versione corretta per le fasce 3–12 anni
 
-<main id="home" class="panel active">
- <section class="hero">
-  <div><div class="eyebrow">Un mondo di scoperte</div><h1>Ogni giorno puoi imparare qualcosa di nuovo.</h1><p>Piccole sfide, nuove parole e attività pensate per imparare giocando, un passo alla volta.</p><button class="btn" id="startBtn">Inizia a giocare →</button></div>
-  <div class="hero-art" aria-hidden="true">🌟📚</div>
- </section>
- <div class="section-head"><div><div class="eyebrow" style="color:#8a6bea">Il tuo spazio</div><h2 id="welcome">Benvenuto in QYRA KIDS!</h2></div><span class="tag" id="streak">Pronti a iniziare</span></div>
- <div class="card" id="childSummary">
-  <div class="row"><div class="profile"><div class="avatar">🧒</div><div><b>Nessun profilo ancora</b><div class="small">Un genitore può creare il primo profilo.</div></div></div><button class="btn secondary" id="createFirst">Crea profilo</button></div>
- </div>
- <div class="section-head"><div><h2>Esplora e impara</h2><div class="muted">Attività semplici per allenare curiosità e memoria.</div></div></div>
- <div class="grid">
-  <article class="card feature"><div class="emoji">🌍</div><h3>Lingue del mondo</h3><p>Scopri parole nuove in diverse lingue con mini quiz.</p><span class="tag">5 lingue iniziali</span></article>
-  <article class="card feature"><div class="emoji">🧠</div><h3>Allena la mente</h3><p>Piccole domande per esercitare attenzione e memoria.</p><span class="tag">Impara giocando</span></article>
-  <article class="card feature"><div class="emoji">🏆</div><h3>I tuoi progressi</h3><p>Raccogli punti e osserva i risultati delle attività.</p><span class="tag">Un passo alla volta</span></article>
- </div>
-</main>
+Questa cartella contiene il file index.html da caricare nella root del repository GitHub Qyra-kids.
+Carica index.html sostituendo quello esistente; non caricare il file ZIP intero nel repository.
+Fasce d'età: 3–5, 6–8, 9–12.
 
-<main id="play" class="panel">
- <div class="section-head"><div><div class="eyebrow" style="color:#8a6bea">Area bambini</div><h2>Pronto per una nuova sfida?</h2><div class="muted">Scegli una lingua e rispondi alla domanda.</div></div><button class="btn light" id="backHome">← Torna</button></div>
- <div class="card lesson">
-  <div class="formrow" style="max-width:280px;margin:0 auto"><label for="language">Lingua da imparare</label><select id="language"><option value="en">Inglese</option><option value="it">Italiano</option><option value="sq">Albanese</option><option value="es">Spagnolo</option><option value="de">Tedesco</option></select></div>
-  <div class="small" id="round">DOMANDA 1</div><div class="word" id="question">🐱</div><div class="muted" id="prompt">Come si dice in inglese?</div>
-  <div class="answer-grid" id="answers"></div><div class="feedback" id="feedback" aria-live="polite"></div>
-  <div class="row"><span class="tag" id="score">0 punti</span><button class="btn secondary" id="nextQuestion">Prossima domanda</button></div>
- </div>
-</main>
-
-<main id="parents" class="panel">
- <div class="section-head"><div><div class="eyebrow" style="color:#8a6bea">Spazio famiglia</div><h2>Area genitori</h2><div class="muted">Gestisci i profili e consulta i progressi sul dispositivo.</div></div><button class="btn light" id="backHome2">← Home</button></div>
- <div class="notice"><b>Versione iniziale:</b> i profili e i punteggi vengono salvati solo nel browser di questo dispositivo. Non inserire cognomi, indirizzi, foto o altri dati personali dei bambini. Per un lancio con account reali, sincronizzazione e protezione dei dati dei minori serviranno backend, autenticazione e verifiche privacy dedicate.</div>
- <div class="grid">
-  <div class="card"><div class="row"><h3>Profili bambini</h3><span class="emoji">👨‍👩‍👧</span></div><div id="profiles"><p class="muted">Nessun profilo creato.</p></div><button class="btn" id="addChild">+ Aggiungi profilo</button></div>
-  <div class="card"><div class="row"><h3>Progressi</h3><span class="emoji">📈</span></div><div id="parentProgress" class="muted">I punti compariranno qui dopo le attività.</div></div>
   <div class="card"><div class="row"><h3>Lingue disponibili</h3><span class="emoji">🌐</span></div><p>Italiano · Inglese · Albanese · Spagnolo · Tedesco</p><p class="small">La struttura può essere ampliata con altre lingue.</p></div>
  </div>
 </main>
